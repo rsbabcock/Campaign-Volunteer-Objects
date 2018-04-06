@@ -38,12 +38,44 @@ const eCalenderEvents = [
 ]
 
 // 5. Volunteer information (needs to be more secure)
+const eVolInfo = Object.create({}, {
     // Name
+    name: {
+        enumerable: true,
+        writable: false,
+        value: "Bobby Bo-Jangles"
+    },
     // Address
+    address: {
+        enumerable: true,
+        writable: false,
+        value: "321 Bob Street, Nashville, TN 37207"
+    },
     // Email
+    email: {
+        enumerable: true,
+        writable: false,
+        value: "bobby@bo-jangles.com"
+    },
     // Phone number
+    phoneNumber: {
+        enumerable: true,
+        writable: false,
+        value: "123-555-7777"
+    },
     // Availability
+    availability: {
+        enumerable: true,
+        writable: false,
+        value: "05/01/18"
+    },
     // What activities each one is willing to do (e.g. answering phone calls, taking polls, etc.)
+    activities: {
+        enumerable: true,
+        writable: false,
+        value: "staring awkwardly"
+    },
+})
 
 // 6. Biography
 
