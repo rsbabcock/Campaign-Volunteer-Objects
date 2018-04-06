@@ -78,8 +78,12 @@ const eVolInfo = Object.create({}, {
 })
 
 // 6. Biography
+const eBio = {
+    bio: "Elizabeth Sanger started at Coyote Ugly, she then progressed to top bar tender. She wants to put those skills to use to serve the populace of Nashville. She cares deeply about people and wants to serve her community"
+}
 
 // 7. Image gallery
+const eGallery =
     // Head shot
     // Picture of family
     // Picture of constituents
