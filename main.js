@@ -106,5 +106,11 @@ const eGallery = Object.create({}, {
 })
 
 // 8. Mission statement
+const eMission = {
+    statement: "To save the world, one penguin, I mean Nashvillian at a time"
+}
 
 // 9. URL for registering to vote
+const eUrlForRegisitering = {
+    urlRego: "http://www.registerToVote.gov"
+}
