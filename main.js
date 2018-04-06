@@ -6,6 +6,13 @@
 const eDistrict = {
     district: "Tennesse Congressional District 5"
 }
+
+const changeDistrict = (objectToChange, propertyToChange) => {
+    console.log(objectToChange = propertyToChange)
+}
+
+changeDistrict(eDistrict, "Tennesse 7th District");
+
 // 2. Her platform statements for the following issues.
 const ePlatforms = {
     //  Taxes
