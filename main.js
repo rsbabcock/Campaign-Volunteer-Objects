@@ -83,10 +83,27 @@ const eBio = {
 }
 
 // 7. Image gallery
-const eGallery =
+const eGallery = Object.create({}, {
     // Head shot
+  headShot: {
+      enumerable: true,
+      writable: false,
+      value: "headshot-es.jpeg"
+  }
     // Picture of family
+    familyPic: {
+        enumerable: true,
+        writable: false,
+        value: "es-fam.jpg"
+    }
     // Picture of constituents
+    constPic: {
+        enumerable: true,
+        writable: false,
+        value: "constituents.jpg"
+    }
+
+})
 
 // 8. Mission statement
 
