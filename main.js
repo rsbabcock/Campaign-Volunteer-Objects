@@ -27,14 +27,14 @@ const eUrlForDonation = {
 
 // 4. Calendar of events - might do this as an array of arrays
 const eCalenderEvents = [
-    {january: "TBD"},
-    {february: "February 14th ~ Kissy hearts day!"},
-    {march: "March 17th ~ Give the irish all the moneys!"},
-    {april: "April 1st ~ Enjoy Spring day!"},
-    {may:"TBD"},
-    {june: "Too hot to determine"},
-    {july: "July 4th ~ It's patriotic to give money"},
-    {august: "After election, don't care"}
+    ["January", {evt1: "TBD", evt2: "TBD"}],
+    ["February", {evt1: "February 14th ~ Kissy hearts day!"}],
+    ["March", {evt1: "March 17th ~ Give the irish all the moneys!", evt2: "TBD"}],
+    ["April", {evt1: "April 1st ~ Enjoy Spring day!"}],
+    ["May", {evt1:"TBD"}],
+    ["June", {evt1:"Too hot to determine"}],
+    ["July", {evt1: "July 4th ~ It's patriotic to give money"}],
+    ["August", {evt: "After election, don't care"}]
 ]
 
 // 5. Volunteer information (needs to be more secure)
@@ -89,15 +89,15 @@ const eGallery = Object.create({}, {
       enumerable: true,
       writable: false,
       value: "headshot-es.jpeg"
-  }
+  },
     // Picture of family
     familyPic: {
         enumerable: true,
         writable: false,
         value: "es-fam.jpg"
-    }
+    },
     // Picture of constituents
-    constPic: {
+    nashvillianPic: {
         enumerable: true,
         writable: false,
         value: "constituents.jpg"
