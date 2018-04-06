@@ -2,20 +2,29 @@
 // their structure, and the corresponding properties for each, 
 // to represent the following information about Elizabeth's campaign.
 
-// 1. Her congressional district (you can use yours here)
-
+// 1. Her congressional district (you can use yours here) - e wil be used to represent Elizabth in the variable names
+const eDistrict = {
+    district: "Tennesse Congressional District 5"
+}
 // 2. Her platform statements for the following issues.
+const ePlatforms = {
     //  Taxes
+    taxes: "No taxes for everyone!",
     // Jobs
+    jobs: "High paying jobs for everyone!",
     // Infrastructure
+    infrastructure: "More sidewalks for students",
     // Health care
+    health: "free best healthcare!",
     // Crime and enforcement
+    crime: "kill all the bad guys"
+}
 
 // 3. URL for donation form
 
 // 4. Calendar of events
 
-// 5. Volunteer information
+// 5. Volunteer information (needs to be more secure)
     // Name
     // Address
     // Email
