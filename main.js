@@ -7,12 +7,12 @@ const eDistrict = {
     district: "Tennesse Congressional District 5"
 }
 // Function to change property of district
-const changeDistrict = (objectToChange, propertyToChange) => {
-    console.log(objectToChange = propertyToChange)
+const changeDistrict = (objectToChange, propertyToChange, value1) => {
+    console.log(objectToChange[propertyToChange] = value1)
 }
 
 // calls function changeDistrict and makes it Tennessee 7th District
-changeDistrict(eDistrict, "Tennesse 7th District");
+changeDistrict(eDistrict, "district", "Tennesse 7th District");
 
 // 2. Her platform statements for the following issues.
 const ePlatforms = {
@@ -28,20 +28,23 @@ const ePlatforms = {
     crime: "kill all the bad guys"
 }
 
-// Function that iterates through ePlatform and changes the values of properties
+// Function that changes property through ePlatform and changes the values of properties
 const changeEplatforms = (objectToChange, propertyToChange, value1) => { 
          objectToChange[propertyToChange] = value1
-         return value1
 }
-
-
 // calls changeEplatforms
 changeEplatforms(ePlatforms, "taxes", "All the moneys!");
-console.log(ePlatforms)
+
 // 3. URL for donation form
 const eUrlForDonation = {
     url1: "http://www.givemeallyourmoney.com"
 }
+// function changes URL
+const changeUrlForDonation = (objectToChange, propertyToChange, value1) => {
+    objectToChange[propertyToChange] = value1
+}
+
+changeUrlForDonation(eUrlForDonation, "url1", "http://www.savethesquirrels.com");
 
 // 4. Calendar of events - might do this as an array of arrays
 const eCalenderEvents = [
