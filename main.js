@@ -21,8 +21,21 @@ const ePlatforms = {
 }
 
 // 3. URL for donation form
+const eUrlForDonation = {
+    url1: "http://www.givemeallyourmoney.com"
+}
 
-// 4. Calendar of events
+// 4. Calendar of events - might do this as an array of arrays
+const eCalenderEvents = [
+    {january: "TBD"},
+    {february: "February 14th ~ Kissy hearts day!"},
+    {march: "March 17th ~ Give the irish all the moneys!"},
+    {april: "April 1st ~ Enjoy Spring day!"},
+    {may:"TBD"},
+    {june: "Too hot to determine"},
+    {july: "July 4th ~ It's patriotic to give money"},
+    {august: "After election, don't care"}
+]
 
 // 5. Volunteer information (needs to be more secure)
     // Name
