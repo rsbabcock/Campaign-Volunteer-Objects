@@ -32,6 +32,7 @@ const ePlatforms = {
 const changeEplatforms = (objectToChange, propertyToChange, value1) => { 
          objectToChange[propertyToChange] = value1
 }
+console.log(ePlatforms);
 // calls changeEplatforms
 changeEplatforms(ePlatforms, "taxes", "All the moneys!");
 
@@ -47,17 +48,27 @@ const changeUrlForDonation = (objectToChange, propertyToChange, value1) => {
 changeUrlForDonation(eUrlForDonation, "url1", "http://www.savethesquirrels.com");
 
 // 4. Calendar of events - might do this as an array of arrays
-const eCalenderEvents = [
-    ["January", {evt1: "TBD", evt2: "TBD"}],
-    ["February", {evt1: "February 14th ~ Kissy hearts day!"}],
-    ["March", {evt1: "March 17th ~ Give the irish all the moneys!", evt2: "TBD"}],
-    ["April", {evt1: "April 1st ~ Enjoy Spring day!"}],
-    ["May", {evt1:"TBD"}],
-    ["June", {evt1:"Too hot to determine"}],
-    ["July", {evt1: "July 4th ~ It's patriotic to give money"}],
-    ["August", {evt: "After election, don't care"}]
-]
+const eCalenderEvents = { months: [ 
+    {month: "January", evt1: "TBD", evt2: "TBD"},
+    {month: "February", evt1: "February 14th ~ Kissy hearts day!"},
+    {month: "March", evt1: "March 17th ~ Give the irish all the moneys!", evt2: "TBD"},
+    {month: "April", evt1: "April 1st ~ Enjoy Spring day!"},
+    {month: "May", evt1:"TBD"},
+    {month: "June", evt1:"Too hot to determine"},
+    {month: "July", evt1: "July 4th ~ It's patriotic to give money"},
+    {month: "August", evt: "After election, don't care"}
+]}
 
+
+// Function to update and change an event in the eCalenderEvents function
+const changeECalender = (objectToChange, propertyToAdd, eventToChange) => {
+    // let monthsAcess = eCalenderEvents["months"];
+    return objectToChange.months[0][propertyToAdd] = eventToChange;
+}
+console.log(eCalenderEvents);
+
+changeECalender(eCalenderEvents, "evt3", "January 1st, Happy New Year");
+    //  console.log(eCalenderEvents)
 // 5. Volunteer information (needs to be more secure)
 const eVolInfo = Object.create({}, {
     // Name
