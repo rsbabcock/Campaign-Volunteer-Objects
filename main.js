@@ -59,22 +59,22 @@ const eCalenderEvents = { months: [
     {month: "August", evt: "After election, don't care"}
 ]}
 
-
 // Function to update and change an event in the eCalenderEvents function
 const changeECalender = (objectToChange, propertyToAdd, eventToChange) => {
     // let monthsAcess = eCalenderEvents["months"];
     return objectToChange.months[0][propertyToAdd] = eventToChange;
 }
-console.log(eCalenderEvents);
-
+// Changes eCalender to have new event in January
 changeECalender(eCalenderEvents, "evt3", "January 1st, Happy New Year");
     //  console.log(eCalenderEvents)
+
+
 // 5. Volunteer information (needs to be more secure)
-const eVolInfo = Object.create({}, {
+const eVolInfo = {
     // Name
     name: {
         enumerable: true,
-        writable: false,
+        writable: true,
         value: "Bobby Bo-Jangles"
     },
     // Address
@@ -107,7 +107,16 @@ const eVolInfo = Object.create({}, {
         writable: false,
         value: "staring awkwardly"
     },
-})
+};
+
+
+// updateVolInfo(eVolInfo, "value", "Blue Steel");
+const updateVolName = (object) => {
+    (eVolInfo.name.value = "Blue Steel")
+    console.log(updateVolInfo);
+}
+
+updateVolName(eVolInfo); 
 
 // 6. Biography
 const eBio = {
