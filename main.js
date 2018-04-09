@@ -6,13 +6,6 @@
 const eDistrict = {
     district: "Tennesse Congressional District 5"
 }
-// Function to change property of district
-const changeDistrict = (objectToChange, propertyToChange, value1) => {
-    console.log(objectToChange[propertyToChange] = value1)
-}
-
-// calls function changeDistrict and makes it Tennessee 7th District
-changeDistrict(eDistrict, "district", "Tennesse 7th District");
 
 // 2. Her platform statements for the following issues.
 const ePlatforms = {
@@ -28,24 +21,10 @@ const ePlatforms = {
     crime: "kill all the bad guys"
 }
 
-// Function that changes property through ePlatform and changes the values of properties
-const changeEplatforms = (objectToChange, propertyToChange, value1) => { 
-         objectToChange[propertyToChange] = value1
-}
-console.log(ePlatforms);
-// calls changeEplatforms
-changeEplatforms(ePlatforms, "taxes", "All the moneys!");
-
 // 3. URL for donation form
 const eUrlForDonation = {
     url1: "http://www.givemeallyourmoney.com"
 }
-// function changes URL
-const changeUrlForDonation = (objectToChange, propertyToChange, value1) => {
-    objectToChange[propertyToChange] = value1
-}
-
-changeUrlForDonation(eUrlForDonation, "url1", "http://www.savethesquirrels.com");
 
 // 4. Calendar of events - might do this as an array of arrays
 const eCalenderEvents = { months: [ 
@@ -110,14 +89,6 @@ const eVolInfo = {
 };
 
 
-// updateVolInfo(eVolInfo, "value", "Blue Steel");
-const updateVolName = (object) => {
-    (eVolInfo.name.value = "Blue Steel")
-    console.log(updateVolInfo);
-}
-
-updateVolName(eVolInfo); 
-
 // 6. Biography
 const eBio = {
     bio: "Elizabeth Sanger started at Coyote Ugly, she then progressed to top bar tender. She wants to put those skills to use to serve the populace of Nashville. She cares deeply about people and wants to serve her community"
@@ -155,3 +126,39 @@ const eMission = {
 const eUrlForRegisitering = {
     urlRego: "http://www.registerToVote.gov"
 }
+
+// Functions
+
+// calls function changeDistrict and makes it Tennessee 7th District
+// Function to change property of district
+const changeDistrict = (objectToChange, propertyToChange, value1) => {
+    console.log(objectToChange[propertyToChange] = value1)
+}
+
+// Calls changeDistrict Function
+changeDistrict(eDistrict, "district", "Tennesse 7th District");
+
+
+// Function that changes property through ePlatform and changes the values of properties
+const changeEplatforms = (objectToChange, propertyToChange, value1) => { 
+    objectToChange[propertyToChange] = value1
+}
+console.log(ePlatforms);
+// calls changeEplatforms
+changeEplatforms(ePlatforms, "taxes", "All the moneys!");
+
+// function changes URL
+const changeUrlForDonation = (objectToChange, propertyToChange, value1) => {
+    objectToChange[propertyToChange] = value1
+}
+
+changeUrlForDonation(eUrlForDonation, "url1", "http://www.savethesquirrels.com");
+
+
+// updateVolInfo(eVolInfo, "value", "Blue Steel");
+const updateVolName = (object) => {
+    (eVolInfo.name.value = "Blue Steel")
+    console.log(updateVolInfo);
+}
+
+updateVolName(eVolInfo); 
